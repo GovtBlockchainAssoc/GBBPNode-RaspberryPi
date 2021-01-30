@@ -65,33 +65,35 @@ Currently, you will be running Geth as the default client syncing to the Ethereu
 3. Log in
 
 You can log in through SSH or using the console (if you have a monitor and keyboard attached)
-
+```
 User: ethereum
 Password: ethereum
-
+```
 You will be prompted to change the password on first login, so you will need to login twice.
 
 4. Getting console output
 
 You can see what’s happening in the background by typing:
-
+```
 sudo tail -f /var/log/syslog
-
+```
 Congratulations. You are now running a full Ethereum node on your Raspberry Pi 4.
 
 5. Syncing the Blockchain
 
-Syncing to the Ethereum main net would take a few days depending on several factors but you can expect up to about 5-7 days.  Syncing to the GBBP is much faster.
+Syncing to the Ethereum main net would take a few days depending on several factors but you could expect up to about 5-7 days -- but you don't want to do this.  Syncing to the GBBP is much faster.
 
 6. Included are 3 monitoring dashboards based on Prometheus/Grafana in order to monitor the node and clients’ data. You can access through your web browser:
-
+```
 URL: http://your_raspberrypi_IP:3000
 User: admin
 Password: ethereum
+```
 
 7. Changing parameters
 
 Clients’ config files are currently located in the /etc/ethereum/ directory. You can edit these files and restart the systemd service in order for the changes to take effect. 
+
 Blockchain clients’ data is stored on the ethereum home account as follows (note the dot before the directory name):
   /home/ethereum/.geth or /home/ethereum/.besu
   
@@ -102,11 +104,15 @@ Blockchain clients’ data is stored on the ethereum home account as follows (no
 All clients run as a systemd service. This is important because in case of some problem arises the system will respawn the process automatically.
 
 Currently the client Geth runs by default so, to switch to Besu, you need to stop and disable Geth.
-  sudo systemctl stop geth && sudo systemctl disable geth
+```
+sudo systemctl stop geth && sudo systemctl disable geth
+```
 
 Next, save the current Ethereum mainnet config files and then replace them with the GBBP config files.
 
 Finally, enable and start Besu
-  sudo systemctl enable besu && sudo systemctl start besu
+```
+ sudo systemctl enable besu && sudo systemctl start besu
+```
 
 At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown.  Your node will connect properly once your node has been added to the GBBP permissioning system.
