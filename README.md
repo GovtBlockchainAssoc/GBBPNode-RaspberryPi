@@ -1,7 +1,7 @@
 # GBBPNode-RaspberryPi
 ### Image for a GBA GBBP Node on a Raspberry Pi ###
 
-This is a custom Linux image for the Raspberry Pi that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node.  The image takes care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode as well as the necessary GBA GBBP customizations.
+This is a custom Linux image for the Raspberry Pi that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node.  The image takes care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode. All you will need to do is edit a few customization files and add the necessary GBA GBBP files.
 
 Since Raspbian OS is still 32 bits, this image uses the native 64 bits OS Ubuntu 20.04 instead to solve various memory issues.
 
@@ -31,16 +31,18 @@ Since Raspbian OS is still 32 bits, this image uses the native 64 bits OS Ubuntu
 *    Raspberry 4-4GB (recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM which can be purchased from Amazon.com for USD $99.99
          (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00).  WARNING: Do NOT get a version without a fan!
 *    MicroSD Card (256 GB Class 10 minimun)
-*    30303 Port forwarding (If you don’t know how to do this, google “port forwarding” followed by your ISP and/or router model. Check with http://portquiz.net:30303/)
+*    30303 Port forwarding (If you don’t know how to do this, google “port forwarding” followed by your ISP and/or router model. Check for success with
+         http://portquiz.net:30303/)
 *    USB keyboard, Monitor and HDMI cable (micro-HDMI) (Optional)
     
 ## INSTALLATION GUIDE AND USAGE ##
 NOTE: This is currently the BLEEDING EDGE installation.  Proceed at your own risk of serious frustration.  ;-)
 
 #### To create a GBBP MicroSD card (if you haven't bought one from the GBA and had it sent to you): ####
-1. Download and install th eappropriate version of Etcher from www.canakit.com/tools/etcher
-2. Download the latest release of the GBBPNode-RaspberryPi software from the link to the right above.
-3. Run Etcher and select the file you downloaded
+1. Download and install the appropriate version of Etcher from www.canakit.com/tools/etcher
+2. Download the latest release of the RaspberryPi Ubuntu software from https://ethraspbian.com/downloads/ubuntu-20.04-preinstalled-server-arm64+raspi-eth1.img.zip.
+3. Unzip the file.
+3. Run Etcher and select the unzipped .img image file.
 4. Attach your microSD card to your computer.  Etcher should detect it and select it automatically BUT ensure that the correct drive is selected.
 5. Click flash.  Etcher will automatically (re)format the card before writing and verifying the image.
 
