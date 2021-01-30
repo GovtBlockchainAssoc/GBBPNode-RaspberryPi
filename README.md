@@ -108,11 +108,20 @@ Currently the client Geth runs by default so, to switch to Besu, you need to sto
 sudo systemctl stop geth && sudo systemctl disable geth
 ```
 
-Next, save the current Ethereum mainnet config files and then replace them with the GBBP config files.
+Next, save the current Ethereum mainnet config files and then replace them with the GBBP config.toml & ibft2Genesis.json files.  You will also want to create a bob (or whatever name you choose) data directory and add the file static-nodes.json to it.
 
-Finally, enable and start Besu
+Eventually, you will run Besu as a system by enabling and starting with
 ```
  sudo systemctl enable besu && sudo systemctl start besu
 ```
 
-At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown.  Your node will connect properly once your node has been added to the GBBP permissioning system.
+For the time being, we will run it with the command line
+```
+bin/besu --data-path=bob --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
+```
+
+At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown
+```
+Received Wire DISCONNECT (UNKNOWN) from peer: PeerInfo{version=5, clientId='besu/v20.10.0/linux-x86_64/oracle_openjdk-java-11', capabilities=[eth/62, eth/63, eth/64, IBF/1], port=30303, nodeId=0x45f5f4a243fe851b025d622140f92d645bc04a0eb67589c4d6a21a5f9f367e600637d83546c3cbf9ccfa2fae072a1fa08e236d222b3262a685c15225540df2ee}.
+```
+Your node will connect properly once your node has been added to the GBBP permissioning system.
