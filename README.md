@@ -1,13 +1,13 @@
 # GBBPNode-RaspberryPi
 Image for a GBA GBBP Node on a Raspberry Pi
 
-Ethereum on ARM for Raspberry Pi 4 is a custom Linux image for the device that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node. Images take care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode as well as GBA customizations.
+This is a custom Linux image for the Raspberry Pi that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node.  The image takes care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode as well as the necessary GBA GBBP customizations.
 
-Since Raspbian OS is still 32 bits, it is necessary to switch to a native 64 bits OS (Ubuntu 20.04) to handle various memory issues.
+Since Raspbian OS is still 32 bits, this image uses the native 64 bits OS Ubuntu 20.04 instead to solve various memory issues.
 
 Main features
     Based on Ubuntu 20.04 64bit
-    Automatic USB disk partitioning and formatting if USB disk is used
+    Automatic USB disk partitioning and formatting if USB disk is used (optional)
     Adds swap memory (ZRAM kernel module + a swap file) based on Armbian work
     Changes the hostname to something like “ethnode-e2a3e6fe” based on MAC hash
     Runs software as a systemd service and starts syncing the Blockchain
@@ -21,11 +21,11 @@ Software included
     Hyperledger Besu: 1.4.4 (compiled)
 
 Ethereum framework
-    Swarm [14]: 0.5.7 (official binary)
-    Raiden Network [15]: 0.200.0~rc1 (official binary)
-    IPFS [16]: 0.5.0 (official binary)
-    Statusd [17]: 0.52.3 (compiled)
-    Vipnode [18]: 2.3.3 (official binary)
+    Swarm: 0.5.7 (official binary)
+    Raiden Network: 0.200.0~rc1 (official binary)
+    IPFS: 0.5.0 (official binary)
+    Statusd: 0.52.3 (compiled)
+    Vipnode: 2.3.3 (official binary)
 
 Recommended hardware and setup
     Raspberry 4-4GB (recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM which can be purchased from Amazon.com for USD $99.99
@@ -37,7 +37,14 @@ Recommended hardware and setup
 INSTALLATION GUIDE AND USAGE
 NOTE: This is currently the BLEEDING EDGE installation.  Proceed at your own risk of serious frustration.  ;-)
 
-It is recommended that your test your Raspberry Pi assembly with the NOOBS MicroSD card first.
+It is recommended that your test your Raspberry Pi assembly with the NOOBS MicroSD card first.  
+
+0.- To create a GBBP MicroSD card (if you haven't bought one from the GBA and had it sent to you):
+    a) Download and install th eappropriate version of Etcher from www.canakit.com/tools/etcher
+    b) Download the latest release of the GBBPNode-RaspberryPi software from the link to the right above.
+    c) Run Etcher and select the file you downloaded
+    d) Attach your microSD card to your computer.  Etcher should detect it and select it automatically BUT ensure that the correct drive is selected.
+    e) Click flash.  Etcher will automatically (re)format the card before writing and verifying the image.
 
 1.- With the Raspberry Pi powered down, replace the NOOBS MicroSD card with the 256GB MicroSD card with the GBA software 
 
