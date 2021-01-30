@@ -46,9 +46,15 @@ NOTE: This is currently the BLEEDING EDGE installation.  Proceed at your own ris
 4. Attach your microSD card to your computer.  Etcher should detect it and select it automatically BUT ensure that the correct drive is selected.
 5. Click flash.  Etcher will automatically (re)format the card before writing and verifying the image.
 
+#### Modify the MicroSD card (this will not be necessary in the future as your wifi-parameters will be able to be updated via a thumb-drive)
+1. You will see a new system-boot drive and a new USB drive.  The former is the Ubuntu /boot/firmware partition (the 1st partition
+on the SD card) used by the Ubuntu boot process.  The latter will likely give messages that it needs to be formatted.  Do NOT do so. 
+2. Read the README file on system-boot drive.
+3. Modify the network-config file for your wifi.
+
 #### It is recommended that your test your Raspberry Pi assembly with the NOOBS MicroSD card first. #### 
 
-1. With the Raspberry Pi powered down, replace the NOOBS MicroSD card with the 256GB MicroSD card with the GBA software 
+1. With the Raspberry Pi powered down, replace the NOOBS MicroSD card with the 256GB GBBP MicroSD card 
 
 2. Power on the Raspberry Pi
 
@@ -83,16 +89,24 @@ URL: http://your_raspberrypi_IP:3000
 User: admin
 Password: ethereum
 
-7.  Switching clients
+7. Changing parameters
+
+Clients’ config files are currently located in the /etc/ethereum/ directory. You can edit these files and restart the systemd service in order for the changes to take effect. 
+Blockchain clients’ data is stored on the ethereum home account as follows (note the dot before the directory name):
+  /home/ethereum/.geth or /home/ethereum/.besu
+  
+8.  Find your enode address and your public and private keys and save them in a safe place.  Import a new account into metamask using your private key.  If you are a validator, you will need this to vote on adding or removing validators.
+
+9.  Switching clients
 
 All clients run as a systemd service. This is important because in case of some problem arises the system will respawn the process automatically.
 
-Currently Geth runs by default so, to switch to other clients (from Geth to Besu), you need to stop and disable Geth first and enable and start Besu:
+Currently the client Geth runs by default so, to switch to Besu, you need to stop and disable Geth.
   sudo systemctl stop geth && sudo systemctl disable geth
+
+Next, save the current Ethereum mainnet config files and then replace them with the GBBP config files.
+
+Finally, enable and start Besu
   sudo systemctl enable besu && sudo systemctl start besu
 
-8. Changing parameters
-
-Clients’ config files are currently located in the /etc/ethereum/ directory. You can edit these files and restart the systemd service in order for the changes to take effect. GBBP Besu config files are stored in the /etc/besu/backup.
-Blockchain clients’ data is stored on the ethereum home account as follows (note the dot before the directory name):
-  /home/ethereum/.geth or /home/ethereum/.besu
+At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown.  Your node will connect properly once your node has been added to the GBBP permissioning system.
