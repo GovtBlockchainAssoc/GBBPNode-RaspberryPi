@@ -1,9 +1,11 @@
 # GBBPNode-RaspberryPi
 ### Image for a GBA GBBP Node on a Raspberry Pi ###
 
-This is a custom Linux image for the Raspberry Pi that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node.  The image takes care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode. All you will need to do is edit a few customization files and add the necessary GBA GBBP files.
+The GBA GBBP node starts with a custom Ubuntu image for the Raspberry Pi that runs Ethereum clients as a boot service and automatically turns the Raspberry Pi 4 into a full Ethereum 1.0 node.  This image takes care of all the necessary steps, from setting up the environment to installing and running the Ethereum software as well as starting the blockchain synchronization.  The image also includes other components of the Ethereum ecosystem such as Status.im, Raiden, IPFS, Swarm and Vipnode. 
 
-Since Raspbian OS is still 32 bits, this image uses the native 64 bits OS Ubuntu 20.04 instead to solve various memory issues.
+All you will need to do is edit a few customization files and then add the necessary GBA GBBP files.
+
+We use a custom Ubuntu image, since the standard Raspbian Pi OS is still 32 bits and suffers from various memory issues when running Ethereum clients.
 
 #### Main features ####
 *    Based on Ubuntu 20.04 64bit
