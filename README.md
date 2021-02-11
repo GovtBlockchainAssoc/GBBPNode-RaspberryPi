@@ -1,6 +1,6 @@
 # GBBPNode-RaspberryPi
 
-## IMPORTANT NOTE! ##
+# IMPORTANT NOTE! NEW INSTRUCTIONS! #
 With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi connection issues experienced by the beta testers), we temporarily recommend that beta testers install Ubuntu 20.04.2 using the Raspberry Pi imager and install Besu manually rather than using the disk image.  The old instructions are left (temporarily) for reference purposes.
 
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
@@ -32,7 +32,7 @@ Your node will connect properly once your node has been added to the GBBP permis
 
 ===========================================================================================
 
-# OLD INSTRUCTIONS -- You probably do NOT want these #
+## OLD INSTRUCTIONS -- You probably do NOT want these ##
 
 ### Image for a GBA GBBP Node on a Raspberry Pi ###
 
