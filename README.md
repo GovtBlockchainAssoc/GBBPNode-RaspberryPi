@@ -1,7 +1,7 @@
 # GBBPNode-RaspberryPi
 
 # IMPORTANT NOTE! NEW INSTRUCTIONS! #
-With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi connection issues experienced by the beta testers), we temporarily recommend that beta testers install Ubuntu 20.04.2 using the Raspberry Pi imager and install Besu manually rather than using the disk image.  The old instructions are left (temporarily) for reference purposes.
+With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi connection issues experienced by the beta testers), it is now recommended that beta testers install Ubuntu 20.04.2 using the Raspberry Pi imager and install Besu manually rather than using the previous disk image.  The old instructions are left (temporarily) for reference purposes.
 
 #### It is recommended that you test your Raspberry Pi assembly with the NOOBS MicroSD card that came with your Raspberry Pi ####
 
