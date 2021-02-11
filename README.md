@@ -28,9 +28,9 @@ Received Wire DISCONNECT (UNKNOWN) from peer: PeerInfo{version=5, clientId='besu
 ```
 Your node will connect properly once your node has been added to the GBBP permissioning system.  
 
-#### Send Mark Waser the enode, public address and ip address which are shown when you are attempting to connect to the GBBP so you can be authorized #####.
+#### To connect, send Mark Waser the enode, public address and ip address shown when you are attempting to connect to the GBBP ####.
 
-=================================================================================================================================================================
+==================================================================================================
 
 # OLD INSTRUCTIONS -- You probably do NOT want these #
 
