@@ -10,9 +10,9 @@ Select Ubuntu Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term 
 
 #### If you are having problems connecting to your wi-fi ####
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
-'''
+```
 sudo dhcpcd -4 
-'''
+```
 (if someone could tell me which method is best, I'll put that advice here)
 
 #### To complete and run your GBBP Node ####
