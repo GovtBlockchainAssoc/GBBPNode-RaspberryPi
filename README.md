@@ -3,6 +3,8 @@
 # IMPORTANT NOTE! NEW INSTRUCTIONS! #
 With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi connection issues experienced by the beta testers), we temporarily recommend that beta testers install Ubuntu 20.04.2 using the Raspberry Pi imager and install Besu manually rather than using the disk image.  The old instructions are left (temporarily) for reference purposes.
 
+#### It is recommended that you test your Raspberry Pi assembly with the NOOBS MicroSD card that came with your Raspberry Pi ####
+
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
 Select Ubuntu Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures.
 
@@ -30,7 +32,7 @@ Your node will connect properly once your node has been added to the GBBP permis
 
 #### To connect, send Mark Waser the enode, public address and ip address shown when Besu is starting up ####
 
-===========================================================================================
+============================================================================
 
 ## OLD INSTRUCTIONS -- You probably do NOT want these ##
 
