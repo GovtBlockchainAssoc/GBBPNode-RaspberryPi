@@ -8,7 +8,13 @@ With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi c
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
 Select Ubuntu Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures.
 
-#### To install Besu, follow the instructions at https://besu.hyperledger.org/en/stable/HowTo/Get-Started/Installation-Options/Install-Binaries/ ####
+#### Install the Java JDK (temnporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
+
+#### To install Besu ####
+1. Download the Besu packaged binaries from https://github.com/hyperledger/besu/releases.
+2. Unpack the downloaded files and change into the besu-<release> directory.
+3. Display Besu command line help to confirm installation:
+```bin/besu --help```
 
 #### If you are having problems connecting to your wi-fi ####
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
