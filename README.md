@@ -8,7 +8,7 @@ With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi c
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
 Select Ubuntu Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures.
 
-#### Install the Java JDK (temnporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
+#### Install the Java JDK (temporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
 
 #### To install Besu ####
 1. Download the Besu packaged binaries from https://github.com/hyperledger/besu/releases.
