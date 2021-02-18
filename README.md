@@ -57,7 +57,7 @@ wifis:
       password: "123456789"
 ```
 Note 1: The network name and password must be enclosed in quotation marks.  
-Note 2: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.  
+Note 2: During the first boot, your Raspberry Pi will try to connect to this network and fail. Simply sudo reboot and it will work.  
 Note 3: There may be circumstances in the future where a static IP is helpful.  If so, follow the steps at the bottom of these instructions below.  
 
 ### Extract the MicroSD reader from your usual machine.  Extract the microSD card from the reader
@@ -89,23 +89,23 @@ Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
 ```
 sudo apt install unzip
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
 ```
 sudo apt update
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
 ```
 sudo apt upgrade
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
 ```
 sudo reboot
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 60 seconds, remote sessions will need to reconnect
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 60 seconds, remote sessions will need to reconnect
 
 
 ## Install Besu 
@@ -113,16 +113,16 @@ Issue the following commands from the command line:
 ```
 wget https://dl.bintray.com/hyperledger-org/besu-repo/besu-20.10.4.zip
 ```
-	- (should take about 10 seconds)
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
 ```
 unzip besu-20.10.4.zip
 ```
-		- (should take 10 seconds)
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 10 seconds
 ```
 cd besu-20.10.4/
 bin/besu --help
 ```
- - should show output of help, this is to make sure everything is ok to this point)
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should show output of help, this is to make sure everything is ok to this point
 
 
 ## Finish loading the GBBP Node software
@@ -130,17 +130,17 @@ Issue the following commands from the command line:
 ```
 wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/config.toml
 ```
-	[should take 1 second]
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
 ```
 wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/ibft2Genesis.json
 ```
-	[should take 1 second]
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
 ```
 mkdir gbbp
 cd gbbp
 wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/static-nodes.json
 ```
-	[should take 1 second]
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
 ```
 cd ..
 ```
