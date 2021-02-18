@@ -1,12 +1,30 @@
 # GBBPNode-RaspberryPi
 
-# IMPORTANT NOTE! NEW INSTRUCTIONS! #
-With Canonical's release of Ubuntu 20.04.2 for the Raspberry Pi (and the Wi-Fi connection issues experienced by the beta testers), it is now recommended that beta testers install Ubuntu 20.04.2 using the Raspberry Pi imager and install Besu manually rather than using the previous disk image.  The old instructions are left (temporarily) for reference purposes.
+#### Recommended hardware and setup ####
+*    Raspberry 4-4GB (recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM which can be purchased from Amazon.com for USD $99.99
+         (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00).  WARNING: Do NOT get a version without a fan!
+*    MicroSD Card (256 GB Class 10 minimun)
+*    30303 Port forwarding (If you don’t know how to do this, google “port forwarding” followed by your ISP and/or router model. Check for success with
+         http://portquiz.net:30303/)
+*    USB keyboard, Monitor and HDMI cable (micro-HDMI) (Optional)
 
-#### It is recommended that you test your Raspberry Pi assembly with the NOOBS MicroSD card that came with your Raspberry Pi ####
+#### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
+
+#### It is STRONGLY recommended that you test your Raspberry Pi assembly with the NOOBS MicroSD card that came with your Raspberry Pi ####
 
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
-Select Ubuntu Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures.
+1.	To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
+2.	Insert SD card in Windows system
+3.	Download the Imager
+4.	Run the Imager
+5.	In the Imager, Choose OS, select Ubuntu then select from the next pop-up menu 
+	```"Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures```
+         (possibly the 5th entry down the list)
+6.	In the Imager, select the SD card drive
+7.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
+
+#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID and password)
+9.	When the writing is done, take the SD card out of Windows system and put in the Pi.
 
 #### Install the Java JDK (temporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
 
@@ -72,14 +90,6 @@ We use a custom Ubuntu image, since the standard Raspbian Pi OS is still 32 bits
 *    Statusd: 0.52.3 (compiled)
 *    Vipnode: 2.3.3 (official binary)
 
-#### Recommended hardware and setup ####
-*    Raspberry 4-4GB (recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM which can be purchased from Amazon.com for USD $99.99
-         (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00).  WARNING: Do NOT get a version without a fan!
-*    MicroSD Card (256 GB Class 10 minimun)
-*    30303 Port forwarding (If you don’t know how to do this, google “port forwarding” followed by your ISP and/or router model. Check for success with
-         http://portquiz.net:30303/)
-*    USB keyboard, Monitor and HDMI cable (micro-HDMI) (Optional)
-    
 ## INSTALLATION GUIDE AND USAGE ##
 NOTE: This is currently the BLEEDING EDGE installation.  Proceed at your own risk of serious frustration.  ;-)
 
