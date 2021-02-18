@@ -69,9 +69,10 @@ Note 3: There may be circumstances in the future where a static IP is helpful.  
 * The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and connect).
 
 #### If you are having problems connecting to your wi-fi
-###### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card  (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
+###### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  
+###### If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card  (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
 
-Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
+Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to ensure that the following command is always run at boot up
 ```
 sudo dhcpcd -4 
 ```
@@ -159,7 +160,8 @@ this stops the execution of the Besu node and stops the scrolling so you can rev
 ``` 
 2021-02-18 09:41:24.182-05:00 | main | INFO  | DefaultP2PNetwork | Enode URL  
 enode://8fe8ba6f6da225d6aec4ec06983607c9f5d6d86daa760277dace8acf62529a04448c1a68ff9f69c49d0cb1685ff5b93052d2e157acbb3240af5485f9f9796317@127.0.0.1:30303
-
+```
+```
 2021-02-18 09:41:24.183-05:00 | main | INFO  | DefaultP2PNetwork | Node address 0xd4e26b34de495b4bab2de440202b16d40b21ed1e
 ```
 2. Issue the following command from the command line to get your public ip address
