@@ -93,7 +93,7 @@ sudo apt install openjdk-11-jre-headless
 ```
 sudo apt install unzip
 ```
- . . . (should take about 10 seconds)
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds)
 ```
 sudo apt update
 ```
@@ -149,14 +149,14 @@ Issue the following commands from the command line:
 ```
 bin/besu --data-path=gbbp --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
 ```
-After several seconds and several screenfuls, you will see HELLO, connect and disconnect messages in blue followed by endless waiting messages
+After several seconds/screenfuls, you will see HELLO, connect and disconnect messages in red and blue followed by endless waiting messages
 ```
 Ctrl-C
 ```
 this stops the execution of the Besu node and stops the scrolling so you can review it for the details needed to join the blockchain
 
 ## Find and upload  your GBBP Node configuration
-1.  About 25 lines above the hello messages, find the folowing information lines
+1.  About 25 lines above the hello messages, find the folowing information lines in red and green  
 2021-02-18 09:41:24.182-05:00 | main | INFO  | DefaultP2PNetwork | Enode URL  
 enode://8fe8ba6f6da225d6aec4ec06983607c9f5d6d86daa760277dace8acf62529a04448c1a68ff9f69c49d0cb1685ff5b93052d2e157acbb3240af5485f9f9796317@127.0.0.1:30303
 2021-02-18 09:41:24.183-05:00 | main | INFO  | DefaultP2PNetwork | Node address 0xd4e26b34de495b4bab2de440202b16d40b21ed1e
@@ -164,6 +164,6 @@ enode://8fe8ba6f6da225d6aec4ec06983607c9f5d6d86daa760277dace8acf62529a04448c1a68
 ```
 wget  dig +short myip.opendns.com @resolver1.opendns.com
 ```
-3. Enter you enode, ip address and node address in the spreadsheet at  
+3. Enter your enode, ip address and node address in the spreadsheet at  
 https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit#gid=0
 
