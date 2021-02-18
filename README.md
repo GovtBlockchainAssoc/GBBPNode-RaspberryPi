@@ -9,7 +9,7 @@
 	 * 256GB MicroSD cards pre-loaded with the GBBP Node software can be ordered at cost from https://www.gbaglobal.org/gbbp-sd/  
 	 * If you wish to buy and set up your own, the GBA recommends a 256GB or larger card in the $25-35 range  
 	  (e.g. https://www.amazon.com/Micro-Center-256GB-Adapter-Memory/dp/B07K81C9XN/ref=sr_1_7_sspa)  
-	  WARNING: There are off-brand cards with 1TB storage in this price range and lower as well, but the reviews are terrible and they are NOT recommended
+	  WARNING: There are off-brand cards with 1TB storage at cheaper prices, but the reviews are terrible and they are NOT recommended
 3.    30303 Port forwarding  
 	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model.  
 	* Check for success by pointing a web browser at http://portquiz.net:30303/  
@@ -17,7 +17,10 @@
 
 #### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
 
-#### It is STRONGLY recommended that you test your Raspberry Pi assembly with the NOOBS MicroSD card that came with your Raspberry Pi ####
+#### Assemble your Raspberry Pi ####
+The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are fairly good but the YouTube video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent. First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
+##### If you have a monitor (or HDMI-equipped TV) and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly ##### 
+This step is not necessary but is STRONGLY recommended if you have the necessary equipment.
 
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
 1.	To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
