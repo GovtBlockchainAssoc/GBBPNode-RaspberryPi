@@ -1,5 +1,11 @@
 # GBBPNode-RaspberryPi
 
+This is the third set of these instructions so they have reached the point of not being bleeding-edge (i.e. they are straight-forward if somewhat lengthy).
+
+Everyone setting up a GBBP node should please join our Discord group (https://discord.gg/cDMfKMB8XJ).
+You'll also need to provide your information on the Node Tracking Spreadsheet at https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit?usp=sharing).
+
+
 ## Recommended hardware and setup ##
 1.    Raspberry 4 (or later) with 4GB RAM (or more)
     	current recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM  
