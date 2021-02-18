@@ -35,7 +35,7 @@ First time assembly is likely to take half an hour but could be done in ten minu
 5.	In the Imager, select the SD card drive
 6.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
 
-#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID & password) using the same tutorial
+#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID & password) \[same tutorial source\]
 1. With the SD card still inserted in your laptop, open a file manager and locate the “system-boot” partition on the card. It contains initial configuration files that will be loaded during the first boot.
 2. Edit the network-config file to add your Wi-Fi credentials. An example is already included in the file, you can simply adapt it.   
 To do so, uncomment (remove the “#” at the beginning) and edit the following lines:
