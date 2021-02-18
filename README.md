@@ -18,11 +18,13 @@
 #### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
 
 #### Assemble your Raspberry Pi ####
-The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are fairly good but the YouTube video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent. First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
+The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are good but the video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent.  
+First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
 
-#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly #### This step is not necessary but is STRONGLY recommended if you have the necessary equipment.
+#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly  
+#### This step is not necessary but is STRONGLY recommended if you have the necessary equipment. ####
 
-#### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
+#### To install Ubuntu 20.04.02 on the MicroSD card, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 1.	Insert MicroSD card into the USB reader provided with your Raspberry Pi and then into your usual computer's USB port
 2.	Download the Imager
 3.	Run the Imager
@@ -55,13 +57,10 @@ wifis:
     "home network":
       password: "123456789"
 ```
-Note: The network name and password must be enclosed in quotation marks.
+Note 1: The network name and password must be enclosed in quotation marks.
+Note 2: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.
 
-Save the file and extract the card from your laptop.
-
-    Note: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.
-
-9.	When the writing is done, take the SD card out of Windows system and put in the Pi.
+#### Extract the reader from your usual machine.  Extract the microSD card from the reader and insert into your Raspberry Pi ####
 
 #### Install the Java JDK (temporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
 
