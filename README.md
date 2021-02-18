@@ -16,7 +16,7 @@
 *    (optional) USB keyboard, Monitor (or HDMI-equipped TV) and HDMI cable (micro-HDMI)
 *    You will also (temporarily) need your usual computer (Windows, Mac or Linux)
 
-#### Assemble your Raspberry Pi ####
+### Assemble your Raspberry Pi ###
 The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are good but the video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent.  
 First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
 
