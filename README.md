@@ -69,9 +69,7 @@ Note 3: There may be circumstances in the future where a static IP is helpful.  
 * The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and connect).
 
 #### If you are having problems connecting to your wi-fi
-If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  
-If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card 
-(Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
+###### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card  (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
 
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
 ```
