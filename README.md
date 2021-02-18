@@ -175,7 +175,7 @@ enode://8fe8ba6f6da225d6aec4ec06983607c9f5d6d86daa760277dace8acf62529a04448c1a68
 ```
 2. Issue the following command from the command line to get your public ip address
 ```
-wget  dig +short myip.opendns.com @resolver1.opendns.com
+dig +short myip.opendns.com @resolver1.opendns.com
 ```
 3. Enter your enode, ip address and node address in the spreadsheet at  
 https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit#gid=0
