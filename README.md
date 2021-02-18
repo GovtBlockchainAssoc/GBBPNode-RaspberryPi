@@ -111,11 +111,11 @@ Issue the following commands from the command line:
 ```
 wget https://dl.bintray.com/hyperledger-org/besu-repo/besu-20.10.4.zip
 ```
- - (should take about 10 seconds)
+	- (should take about 10 seconds)
 ```
 unzip besu-20.10.4.zip
 ```
- - (should take 10 seconds)
+		- (should take 10 seconds)
 ```
 cd besu-20.10.4/
 bin/besu --help
@@ -123,7 +123,25 @@ bin/besu --help
  - should show output of help, this is to make sure everything is ok to this point)
 
 
-## To complete and run your GBBP Node 
+## Finish loading the GBBP Node software
+Issue the following commands from the command line:
+```
+wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/config.toml
+```
+	[should take 1 second]
+```
+wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/ibft2Genesis.json
+```
+	[should take 1 second]
+```
+mkdir gbbp
+cd gbbp
+wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/static-nodes.json
+```
+	[should take 1 second]
+```
+cd ..
+```
 1. Save the current Besu config files and then replace them with the GBBP config.toml & ibft2Genesis.json files.  You will also want to create a bob (or whatever name you choose) data directory and add the file static-nodes.json to it.
 2. Run your node with the command line
 ```
