@@ -1,12 +1,13 @@
 # GBBPNode-RaspberryPi
 
 #### Recommended hardware and setup ####
-*    Raspberry 4-4GB (recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM  
+*    Raspberry 4 (or later) with 4GB RAM (or more)
+    	current recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM  
 	available from Amazon.com for USD $99.99 (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00)  
 	WARNING: Do NOT get a version without a fan!
 *    MicroSD Card (256 GB Class 10 minimun)  
-	* 256GB MicroSD cards pre-loaded with the GBBP Node software can be ordered  at cost at cost from https://www.gbaglobal.org/gbbp-sd/  
-	* If you wish to buy your own, the GBA recommends a 256GB card in the $25-35 range  
+	* 256GB MicroSD cards pre-loaded with the GBBP Node software can be ordered at cost from https://www.gbaglobal.org/gbbp-sd/  
+	* If you wish to buy and set up your own, the GBA recommends a 256GB or larger card in the $25-35 range  
 	  (e.g. https://www.amazon.com/Micro-Center-256GB-Adapter-Memory/dp/B07K81C9XN/ref=sr_1_7_sspa)  
 	  WARNING: There are off-brand cards with 1TB storage in this price range and lower as well, but the reviews are terrible and they are NOT recommended
 *    30303 Port forwarding  
