@@ -8,11 +8,10 @@
 	* 256GB MicroSD cards pre-loaded with the GBBP Node software can be ordered  at cost at cost from https://www.gbaglobal.org/gbbp-sd/  
 	* If you wish to buy your own, the GBA recommends a 256GB card in the $25-35 range  
 	  (e.g. https://www.amazon.com/Micro-Center-256GB-Adapter-Memory/dp/B07K81C9XN/ref=sr_1_7_sspa)  
-	  We *are* aware of off-brand cards with 1TB storage in this price range and lower as well,  
-	  but the reviews have been terrible and they are NOT recommended
-*    30303 Port forwarding 
-	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model. 
-	* Check for success by pointing a web browser at http://portquiz.net:30303/
+	  WARNING: There are off-brand cards with 1TB storage in this price range and lower as well, but the reviews are terrible and they are NOT recommended
+*    30303 Port forwarding  
+	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model.  
+	* Check for success by pointing a web browser at http://portquiz.net:30303/  
 *    (optional) USB keyboard, Monitor and HDMI cable (micro-HDMI)
 
 #### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
