@@ -28,8 +28,10 @@ First time assembly is likely to take half an hour but could be done in ten minu
 2.	Download the Imager
 3.	Run the Imager
 4.	In the Imager, Choose OS, select Ubuntu then select from the next pop-up menu  
-	```"Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures```  
-         (currently, but not necessarily, the 5th entry down the list)
+	```
+	Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures
+	```  
+        (currently, but not necessarily, the 5th entry down the list)
 5.	In the Imager, select the SD card drive
 6.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
 
