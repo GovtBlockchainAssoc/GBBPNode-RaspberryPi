@@ -1,6 +1,6 @@
 # GBBPNode-RaspberryPi
 
-#### Recommended hardware and setup ####
+### Recommended hardware and setup ###
 1.    Raspberry 4 (or later) with 4GB RAM (or more)
     	current recommended version is the CanaKit Raspberry Pi 4 4GB Starter Kit – 4GB RAM  
 	available from Amazon.com for USD $99.99 (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00)  
@@ -22,7 +22,8 @@ First time assembly is likely to take half an hour but could be done in ten minu
 
 #### If you have a monitor and mouse, it is STRONGLY recommended that the provided NOOBS MicroSD card be used to test that the Raspberry Pi is functioning correctly  
 
-#### To install Ubuntu 20.04.02 on the MicroSD card, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
+#### Install Ubuntu 20.04.02 on the MicroSD card
+###### follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 1.	Insert MicroSD card into the USB reader provided with your Raspberry Pi and then into your usual computer's USB port
 2.	Download the Imager
 3.	Run the Imager
