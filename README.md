@@ -89,11 +89,11 @@ Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
 ```
-  - (click Y to proceed, should take about 60 seconds)
+. . . (click Y to proceed, should take about 60 seconds)
 ```
 sudo apt install unzip
 ```
-(should take about 10 seconds)
+ . . . (should take about 10 seconds)
 ```
 sudo apt update
 ```
@@ -144,28 +144,26 @@ wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/
 ```
 cd ..
 ```
-## Run Besu and collect your GBBP Node configuration
+## Run Besu to initialize your GBBP Node configuration
 Issue the following commands from the command line:
 ```
 bin/besu --data-path=gbbp --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
 ```
-After several seconds and several screenfuls, you will see connect messages and disconnect messagesin blue
+After several seconds and several screenfuls, you will see HELLO, connect and disconnect messages in blue followed by endless waiting messages
 ```
 Ctrl-C
 ```
 this stops the execution of the Besu node and stops the scrolling so you can review it for the details needed to join the blockchain
 
-
-
-1.	Your node ID in the Received Wire DISCONNECT (sample: nodeId=0x45f5f4a243fe851b025d622140f92d645bc04a0eb67589c4d6a21a5f9f367e600667d83546c3cbf9ccfa2fae072a1fa08e236d222b3262a685c15225540df2ee
-2.	The IP of the Pi (the internal network IP of your local area network, sample 192.168.1.100)
-a.	Enter the command: ip a
-[this will give you the IP address of the network connection inside your local area network]
-b.	The public IP of your internet connection (sample 71.45.66.250)
-		Google search "what is my ip"
-[this will give you the public IP of your internet connection reported at the top of the search results]
-
-Enter those three values in the spreadsheet here: 
-
+## Find and upload  your GBBP Node configuration
+1.  About 25 lines above the hello messages, find the folowing information lines
+2021-02-18 09:41:24.182-05:00 | main | INFO  | DefaultP2PNetwork | Enode URL  
+enode://8fe8ba6f6da225d6aec4ec06983607c9f5d6d86daa760277dace8acf62529a04448c1a68ff9f69c49d0cb1685ff5b93052d2e157acbb3240af5485f9f9796317@127.0.0.1:30303
+2021-02-18 09:41:24.183-05:00 | main | INFO  | DefaultP2PNetwork | Node address 0xd4e26b34de495b4bab2de440202b16d40b21ed1e
+2. Issue the following command from the command line to get your public ip address
+```
+wget  dig +short myip.opendns.com @resolver1.opendns.com
+```
+3. Enter you enode, ip address and node address in the spreadsheet at  
 https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit#gid=0
 
