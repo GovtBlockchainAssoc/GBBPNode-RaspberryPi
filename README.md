@@ -5,10 +5,11 @@
 	available from Amazon.com for USD $99.99 (https://www.amazon.com/gp/product/B07V5JTMV9/ref=ppx_yo_dt_b_asin_title_o00_s00)  
 	WARNING: Do NOT get a version without a fan!
 *    MicroSD Card (256 GB Class 10 minimun)
-	* The GBA is selling 256GB MicroSD cards pre-loaded with the GBBP Node software at cost which can be ordered here. 
-	* If you wish to buy your own, the GBA recommends a 256GB card in the $25-35 range 
-	  (e.g. https://www.amazon.com/Micro-Center-256GB-Adapter-Memory/dp/B07K81C9XN/ref=sr_1_7_sspa)
-	  We *are* aware of off-brand cards with 1TB storage in this price range and lower as well, but the reviews have been terrible and they are NOT recommended
+	* 256GB MicroSD cards pre-loaded with the GBBP Node software can be ordered  at cost at cost from https://www.gbaglobal.org/gbbp-sd/ 
+	* If you wish to buy your own, the GBA recommends a 256GB card in the $25-35 range  
+	  (e.g. https://www.amazon.com/Micro-Center-256GB-Adapter-Memory/dp/B07K81C9XN/ref=sr_1_7_sspa)  
+	  We *are* aware of off-brand cards with 1TB storage in this price range and lower as well,  
+	  but the reviews have been terrible and they are NOT recommended
 *    30303 Port forwarding 
 	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model. 
 	* Check for success by pointing a web browser at http://portquiz.net:30303/
