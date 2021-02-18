@@ -69,12 +69,12 @@ Note 3: There may be circumstances in the future where a static IP is helpful.  
 * The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and conect to that).
 
 #### If you are having problems connecting to your wi-fi
+##### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
 ```
 sudo dhcpcd -4 
 ```
 (if someone could tell me which method is best, I'll put that advice here)
-##### If trying to use network access, often the Pi will connect about 25% of the time.  If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card (Windows WSL will not be able to read it -- though it is promised in the next version)
 
 ## Log into Ubuntu on your Raspberry Pi 
 1. The default username is ubuntu and password is ubuntu
@@ -87,7 +87,7 @@ Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
 ```
-(click Y to proceed, should take about 60 seconds)
+ - (click Y to proceed, should take about 60 seconds)
 ```
 sudo apt install unzip
 ```
@@ -107,10 +107,21 @@ sudo reboot
 
 
 ## Install Besu 
-1. Download the Besu packaged binaries from https://github.com/hyperledger/besu/releases.
-2. Unpack the downloaded files and change into the besu-<release> directory.
-3. Display Besu command line help to confirm installation:
-```bin/besu --help```
+Issue the following commands from the command line:
+```
+wget https://dl.bintray.com/hyperledger-org/besu-repo/besu-20.10.4.zip
+```
+ - (should take about 10 seconds)
+```
+unzip besu-20.10.4.zip
+```
+ - (should take 10 seconds)
+```
+cd besu-20.10.4/
+bin/besu --help
+```
+ - should show output of help, this is to make sure everything is ok to this point)
+
 
 ## To complete and run your GBBP Node 
 1. Save the current Besu config files and then replace them with the GBBP config.toml & ibft2Genesis.json files.  You will also want to create a bob (or whatever name you choose) data directory and add the file static-nodes.json to it.
