@@ -13,13 +13,14 @@
 3.    30303 Port forwarding  
 	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model.  
 	* Check for success by pointing a web browser at http://portquiz.net:30303/  
-*    (optional) USB keyboard, Monitor and HDMI cable (micro-HDMI)
+*    (optional) USB keyboard, Monitor (or HDMI-equipped TV) and HDMI cable (micro-HDMI)
 
 #### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
 
 #### Assemble your Raspberry Pi ####
 The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are fairly good but the YouTube video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent. First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
-##### If you have a monitor (or HDMI-equipped TV) and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly ##### 
+
+#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly #### 
 This step is not necessary but is STRONGLY recommended if you have the necessary equipment.
 
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
