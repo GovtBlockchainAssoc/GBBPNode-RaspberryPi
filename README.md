@@ -23,7 +23,7 @@ First time assembly is likely to take half an hour but could be done in ten minu
 #### If you have a monitor and mouse, it is STRONGLY recommended that the provided NOOBS MicroSD card be used to test that the Raspberry Pi is functioning correctly  
 
 ## Install Ubuntu 20.04.02 on the MicroSD card
-### Follow these instructions from https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
+#### Follow these instructions from https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 1.	Insert MicroSD card into the USB reader provided with your Raspberry Pi and then into your usual computer's USB port
 2.	Download the Imager
 3.	Run the Imager
@@ -33,7 +33,7 @@ First time assembly is likely to take half an hour but could be done in ten minu
 5.	In the Imager, select the SD card drive
 6.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
 
-### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID & password) using the same tutorial #####
+#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID & password) using the same tutorial
 1. With the SD card still inserted in your laptop, open a file manager and locate the “system-boot” partition on the card. It contains initial configuration files that will be loaded during the first boot.
 2. Edit the network-config file to add your Wi-Fi credentials. An example is already included in the file, you can simply adapt it.   
 To do so, uncomment (remove the “#” at the beginning) and edit the following lines:
