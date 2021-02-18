@@ -20,21 +20,47 @@
 #### Assemble your Raspberry Pi ####
 The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are fairly good but the YouTube video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent. First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
 
-#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly #### 
-This step is not necessary but is STRONGLY recommended if you have the necessary equipment.
+#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly #### This step is not necessary but is STRONGLY recommended if you have the necessary equipment.
 
 #### To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview ####
-1.	To install Ubuntu 20.04.02, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
-2.	Insert SD card in Windows system
-3.	Download the Imager
-4.	Run the Imager
-5.	In the Imager, Choose OS, select Ubuntu then select from the next pop-up menu 
+1.	Insert MicroSD card into the USB reader provided with your Raspberry Pi and then into your usual computer's USB port
+2.	Download the Imager
+3.	Run the Imager
+4.	In the Imager, Choose OS, select Ubuntu then select from the next pop-up menu 
 	```"Server 20.04.2 LTS (RPi 3/4/4000) 64-bit server OS with long-term support for arm64 architectures```
          (possibly the 5th entry down the list)
-6.	In the Imager, select the SD card drive
-7.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
+5.	In the Imager, select the SD card drive
+6.	Click on “WRITE” and wait for the magic to happen… (This magic might take a few minutes)
 
-#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID and password)
+#### Unless you have a wired Ethernet connection, configure your wireless information (network name/SSID and password) using the same tutorial #####
+1. With the SD card still inserted in your laptop, open a file manager and locate the “system-boot” partition on the card. It contains initial configuration files that will be loaded during the first boot.
+2. Edit the network-config file to add your Wi-Fi credentials. An example is already included in the file, you can simply adapt it.   
+To do so, uncomment (remove the “#” at the beginning) and edit the following lines:
+``` 
+wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+    <wifi network name>:
+      password: "<wifi password>" 
+```
+For example:
+```
+wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+    "home network":
+      password: "123456789"
+```
+Note: The network name and password must be enclosed in quotation marks.
+
+Save the file and extract the card from your laptop.
+
+    Note: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.
+
 9.	When the writing is done, take the SD card out of Windows system and put in the Pi.
 
 #### Install the Java JDK (temporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
