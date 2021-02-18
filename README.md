@@ -60,15 +60,15 @@ Note 1: The network name and password must be enclosed in quotation marks.
 Note 2: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.  
 Note 3: There may be circumstances in the future where a static IP is helpful.  If so, follow the steps at the bottom of these instructions below.  
 
-## Extract the MicroSD reader from your usual machine.  Extract the microSD card from the reader
+### Extract the MicroSD reader from your usual machine.  Extract the microSD card from the reader
 ## Insert the MicroSD card into your Raspberry Pi and power the Pi up. 
 
-### If you don't have a keyboard, monitor and mouse (or want network access), you have two options 
+#### If you don't have a keyboard, monitor and mouse (or want network access), you have two options 
 1.  Install PuTTY (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your regular machine to ssh to a command line interface on your Pi (easiest)
 2.  Follow the steps at the bottom of these instructions below to install a lightweight GUI and accessible via Windows Remote Desktop or VNC to connect to the Pi
 * The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and conect to that).
 
-### If you are having problems connecting to your wi-fi
+#### If you are having problems connecting to your wi-fi
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
 ```
 sudo dhcpcd -4 
@@ -82,7 +82,7 @@ sudo dhcpcd -4
 3. If you are connected remotely, the session will then close and you will have to reconnect.
 4. Login with ubuntu as the username and the new password.
 
-## Install the Java JDK ###
+## Install the Java JDK 
 Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
