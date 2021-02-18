@@ -69,7 +69,9 @@ Note 3: There may be circumstances in the future where a static IP is helpful.  
 * The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and conect to that).
 
 #### If you are having problems connecting to your wi-fi
-##### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
+##### If trying to use network access, often the Pi will connect about 25% of the time allowing you to complete these instructions that way.  
+##### If this doesn't occur, you will either need to use a monitor and keyboard or use your standard non-Windows machine to edit the second partition of the microSD card 
+##### (Windows WSL will not be able to read it -- though it is promised in the next version of WSL and may be available now vai the Insiders Preview)
 Follow one set of the instructions at https://smallbusiness.chron.com/run-command-startup-linux-27796.html to run the following command at boot up
 ```
 sudo dhcpcd -4 
@@ -87,7 +89,7 @@ Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
 ```
- - (click Y to proceed, should take about 60 seconds)
+  - (click Y to proceed, should take about 60 seconds)
 ```
 sudo apt install unzip
 ```
@@ -142,23 +144,28 @@ wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/
 ```
 cd ..
 ```
-1. Save the current Besu config files and then replace them with the GBBP config.toml & ibft2Genesis.json files.  You will also want to create a bob (or whatever name you choose) data directory and add the file static-nodes.json to it.
-2. Run your node with the command line
+## Run Besu and collect your GBBP Node configuration
+Issue the following commands from the command line:
 ```
-bin/besu --data-path=bob --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
+bin/besu --data-path=gbbp --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
 ```
-
-At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown
+After several seconds and several screenfuls, you will see connect messages and disconnect messagesin blue
 ```
-Received Wire DISCONNECT (UNKNOWN) from peer: PeerInfo{version=5, clientId='besu/v20.10.0/linux-x86_64/oracle_openjdk-java-11', capabilities=[eth/62, eth/63, eth/64, IBF/1], port=30303, nodeId=0x45f5f4a243fe851b025d622140f92d645bc04a0eb67589c4d6a21a5f9f367e600637d83546c3cbf9ccfa2fae072a1fa08e236d222b3262a685c15225540df2ee}.
+Ctrl-C
 ```
-Your node will connect properly once your node has been added to the GBBP permissioning system.  
-
-#### To connect, send Mark Waser the enode, public address and ip address shown when Besu is starting up ####
+this stops the execution of the Besu node and stops the scrolling so you can review it for the details needed to join the blockchain
 
 
-At first, you will see your node connect to the GBBP but then receive a request to disconnect because it is unknown
-```
-Received Wire DISCONNECT (UNKNOWN) from peer: PeerInfo{version=5, clientId='besu/v20.10.0/linux-x86_64/oracle_openjdk-java-11', capabilities=[eth/62, eth/63, eth/64, IBF/1], port=30303, nodeId=0x45f5f4a243fe851b025d622140f92d645bc04a0eb67589c4d6a21a5f9f367e600637d83546c3cbf9ccfa2fae072a1fa08e236d222b3262a685c15225540df2ee}.
-```
-Your node will connect properly once your node has been added to the GBBP permissioning system.
+
+1.	Your node ID in the Received Wire DISCONNECT (sample: nodeId=0x45f5f4a243fe851b025d622140f92d645bc04a0eb67589c4d6a21a5f9f367e600667d83546c3cbf9ccfa2fae072a1fa08e236d222b3262a685c15225540df2ee
+2.	The IP of the Pi (the internal network IP of your local area network, sample 192.168.1.100)
+a.	Enter the command: ip a
+[this will give you the IP address of the network connection inside your local area network]
+b.	The public IP of your internet connection (sample 71.45.66.250)
+		Google search "what is my ip"
+[this will give you the public IP of your internet connection reported at the top of the search results]
+
+Enter those three values in the spreadsheet here: 
+
+https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit#gid=0
+
