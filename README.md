@@ -3,7 +3,7 @@
 This is the third set of these instructions so they have reached the point of not being bleeding-edge.  They should be straight-forward (if somewhat lengthy) for most people willing to deal with a Unix command line.  People not wanting to do that will need to wait until the GBA can send out microSD cards with the software already loaded.
 
 Everyone setting up a GBBP node should please join our Discord group (https://discord.gg/cDMfKMB8XJ).  
-Everyone should also provide your information (and status) on the Node Tracking Spreadsheet at  
+Everyone should also provide (and update) their information (and status) on the Node Tracking Spreadsheet at  
 https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit?usp=sharing).
 
 
