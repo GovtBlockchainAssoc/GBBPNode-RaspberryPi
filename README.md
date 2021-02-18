@@ -14,15 +14,13 @@
 	* Find instructions for your router by Googling “port forwarding” followed by your ISP and/or router model.  
 	* Check for success by pointing a web browser at http://portquiz.net:30303/  
 *    (optional) USB keyboard, Monitor (or HDMI-equipped TV) and HDMI cable (micro-HDMI)
-
-#### You will also (temporarily) need your usual computer (Windows, Mac or Linux) ####
+*    You will also (temporarily) need your usual computer (Windows, Mac or Linux)
 
 #### Assemble your Raspberry Pi ####
 The instructions in the included Quick-Start Guide (https://www.canakit.com/pi) are good but the video at https://www.youtube.com/watch?v=7rcNjgVgc-I is excellent.  
 First time assembly is likely to take half an hour but could be done in ten minutes once you know what you are doing.  
 
-#### If you have a monitor and a mouse, the provided NOOBS MicroSD card can be used to test that the Raspberry Pi is functioning correctly  
-#### This step is not necessary but is STRONGLY recommended if you have the necessary equipment. ####
+#### If you have a monitor and mouse, it is STRONGLY recommended that the provided NOOBS MicroSD card be used to test that the Raspberry Pi is functioning correctly  
 
 #### To install Ubuntu 20.04.02 on the MicroSD card, follow the instructions at https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 1.	Insert MicroSD card into the USB reader provided with your Raspberry Pi and then into your usual computer's USB port
@@ -59,10 +57,44 @@ wifis:
 ```
 Note 1: The network name and password must be enclosed in quotation marks.
 Note 2: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.
+Note 3: There may be circumstances in the future where a static IP is helpful.  If so, follow the steps at the bottom of these instructions below
 
-#### Extract the reader from your usual machine.  Extract the microSD card from the reader and insert into your Raspberry Pi ####
+#### Extract the MicroSD reader from your usual machine.  Extract the microSD card from the reader and insert into your Raspberry Pi and power the Pi up. ####
 
-#### Install the Java JDK (temporary instructions at https://techoral.com/blog/java/install-openjdk-15-ubuntu.html) ####
+#### If you don't have a keyboard, monitor and mouse (or want network access), you have two options ####
+1.  Install PuTTY (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your regular machine to ssh to a command line interface on your Pi (easiest)
+2.  Follow the steps at the bottom of these instructions below to install a lightweight GUI and accessible via Windows Remote Desktop or VNC to connect to the Pi
+* The default system name is ubuntu (you can either connect to this name or find the IP address on your network equipment and conect to that).
+
+#### Log into Ubuntu on your Raspberry Pi ####
+1. The default username is ubuntu and password is ubuntu
+2. You will be prompted to change the password.  Write it down and store it in a safe place.
+3. If you are connected remotely, the session will then close and you will have to reconnect.
+4. Login with ubuntu as the username and the new password.
+
+#### Install the Java JDK ####
+Issue the following commands from the command line:
+```
+sudo apt install openjdk-11-jre-headless
+```
+(click Y to proceed, should take about 60 seconds)
+```
+sudo apt install unzip
+```
+(should take about 10 seconds)
+```
+sudo apt update
+```
+(should take about 10 seconds)
+```
+sudo apt upgrade
+```
+(click Y to proceed, should take about 60 seconds)
+```
+sudo reboot
+```
+(should take about 60 seconds, remote sessions will need to reconnect)
+
 
 #### To install Besu ####
 1. Download the Besu packaged binaries from https://github.com/hyperledger/besu/releases.
