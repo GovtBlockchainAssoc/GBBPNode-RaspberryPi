@@ -89,23 +89,23 @@ Issue the following commands from the command line:
 ```
 sudo apt install openjdk-11-jre-headless
 ```
-. . . (click Y to proceed, should take about 60 seconds)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
 ```
 sudo apt install unzip
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;should take about 10 seconds
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
 ```
 sudo apt update
 ```
-(should take about 10 seconds)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
 ```
 sudo apt upgrade
 ```
-(click Y to proceed, should take about 60 seconds)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
 ```
 sudo reboot
 ```
-(should take about 60 seconds, remote sessions will need to reconnect)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 60 seconds, remote sessions will need to reconnect
 
 
 ## Install Besu 
@@ -170,3 +170,18 @@ wget  dig +short myip.opendns.com @resolver1.opendns.com
 3. Enter your enode, ip address and node address in the spreadsheet at  
 https://docs.google.com/spreadsheets/d/1BWuOzJKzfT9JG4MKBb8oNN365Wee8dWZLN3oVxbytDE/edit#gid=0
 
+## ADDITIONAL EXTRAS
+Static IP address setup:  
+https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server
+
+GUI setup:  
+Recommend xfce-desktop using this command: sudo apt install xfce4  
+(details here: https://itsfoss.com/install-xfce-desktop-xubuntu/)
+	
+XRDP setup:  
+Google any XRDP setup and for troubleshooting; use RDP on Windows)  
+Example: https://www.tecmint.com/install-xrdp-on-ubuntu/
+	
+VNC setup:  
+Download VNC for Windows so you can connect then use this example:  
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
