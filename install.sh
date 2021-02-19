@@ -11,7 +11,7 @@ apt install unzip
 apt install openjdk-11-jre-headless
 wget -O /usr/local/besu.zip \
     https://dl.bintray.com/hyperledger-org/besu-repo/besu-20.10.4.zip
-unzip /usr/local/besu.zip
+unzip /usr/local/besu.zip -x /usr/local
 /usr/local/besu-20.10.4/bin/besu --help
 
 wget -O /usr/local/besu-20.10.4/config.toml \
