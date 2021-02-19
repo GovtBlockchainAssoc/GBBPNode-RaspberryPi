@@ -93,76 +93,9 @@ sudo dhcpcd -4
 3. If you are connected remotely, the session will then close and you will have to reconnect.
 4. Login with ubuntu as the username and the new password.
 
-## Install the Java JDK 
-Issue the following commands from the command line:
-```
-sudo apt install openjdk-11-jre-headless
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
-```
-sudo apt install unzip
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
-```
-sudo apt update
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
-```
-sudo apt upgrade
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; click Y to proceed, should take about 60 seconds
-```
-sudo reboot
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 60 seconds, remote sessions will need to reconnect
-
-
-## Install Besu 
-Issue the following commands from the command line:
-```
-wget https://dl.bintray.com/hyperledger-org/besu-repo/besu-20.10.4.zip
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take about 10 seconds
-```
-unzip besu-20.10.4.zip
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 10 seconds
-```
-cd besu-20.10.4/
-bin/besu --help
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should show output of help, this is to make sure everything is ok to this point
-
-
-## Finish loading the GBBP Node software
-Issue the following commands from the command line:
-```
-wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/config.toml
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
-```
-wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/ibft2Genesis.json
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
-```
-mkdir gbbp
-cd gbbp
-wget https://raw.githubusercontent.com/GovtBlockchainAssoc/GBBPNode-RaspberryPi/main/static-nodes.json
-```
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; should take 1 second
-```
-cd ..
-```
-## Run Besu to initialize your GBBP Node configuration
-Issue the following commands from the command line:
-```
-bin/besu --data-path=gbbp --config-file=config.toml --genesis-file=ibft2Genesis.json --min-gas-price=0 --miner-enabled --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 --logging=debug
-```
-After several seconds/screenfuls, you will see HELLO, connect and disconnect messages in red and blue followed by endless waiting messages
-```
-Ctrl-C
-```
-this stops the execution of the Besu node and stops the scrolling so you can review it for the details needed to join the blockchain
+## Setup Besu and GBBP
+The following command will download and install besu and create a systemd service configuration that autostarts it:
+curl https://raw.githubusercontent.com/Skyler827/GBBPNode-RaspberryPi/main/install.sh | sudo sh
 
 ## Find and upload  your GBBP Node configuration
 1.  About 25 lines above the hello messages, find the folowing information lines in red and green 
