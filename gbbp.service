@@ -1,0 +1,21 @@
+[Unit]
+Description=Government Business Blockchain Platform Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+ExecStart=/usr/local/besu-20.10.4/bin/besu \
+    --data-path=/usr/local/besu-20.10.4/gbbp \
+    --config-file=/usr/local/besu-20.10.4/config.toml \
+    --genesis-file=ibft2Genesis.json \
+    --min-gas-price=0 \
+    --miner-enabled \
+    --miner-coinbase=0xC3D693fBE006154eF80C288DB527FaC4bd38ca09 \
+    --logging=debug
+
+[Install]
+WantedBy=multi-user.target
